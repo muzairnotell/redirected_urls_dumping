@@ -1,0 +1,12 @@
+version: '3'
+services:
+  fastapi:
+    build: .
+    container_name: suspoicous_domains
+    command:uvicorn main:app --host  0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - NAME=suspoicous_domains

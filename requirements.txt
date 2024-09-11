@@ -1,0 +1,5 @@
+elasticsearch
+fastapi
+pydantic
+Requests
+scapy
